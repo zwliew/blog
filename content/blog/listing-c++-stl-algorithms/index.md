@@ -1,6 +1,6 @@
 ---
 title: Listing C++ STL Algorithms
-date: "2020-02-16T02:19:30Z"
+date: 2020-02-16T03:56:31Z
 description: Essentially all the C++ STL algorithms and their categories that you should know.
 ---
 
