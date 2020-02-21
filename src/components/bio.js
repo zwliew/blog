@@ -8,8 +8,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { FaGithub, FaTwitter, FaMedium } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
+import classes from "./bio.module.css"
+
+const SocialLink = ({ to, Img, children }) => (
+  <li className={classes.SocialLink}>
+    <a href={to}>
+      <Img></Img>
+    </a>
+  </li>
+)
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -26,6 +36,8 @@ const Bio = () => {
           author
           social {
             twitter
+            github
+            medium
           }
         }
       }
@@ -53,13 +65,26 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        Written by <strong>{author}</strong> who lives and studies in Singapore.
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
-      </p>
+      <div>
+        <p>
+          Written by <strong>{author}</strong> who lives and studies in
+          Singapore.
+        </p>
+        <ul className={classes.SocialLinks}>
+          <SocialLink
+            Img={FaTwitter}
+            to={`https://twitter.com/${social.twitter}`}
+          ></SocialLink>
+          <SocialLink
+            Img={FaGithub}
+            to={`https://github.com/${social.github}`}
+          ></SocialLink>
+          <SocialLink
+            Img={FaMedium}
+            to={`https://medium.com/@${social.medium}`}
+          ></SocialLink>
+        </ul>
+      </div>
     </div>
   )
 }

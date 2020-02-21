@@ -1,0 +1,19 @@
+.SocialLinks {
+  display: inline-flex;
+  margin: 0;
+}
+
+.SocialLink {
+  list-style-type: none;
+  margin: 0 8px;
+}
+
+.SocialLink a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.SocialLink svg {
+  height: 24px;
+  width: 24px;
+}

@@ -6,6 +6,8 @@ module.exports = {
     siteUrl: `https://teeny-thoughts.web.app`,
     social: {
       twitter: `zwliew`,
+      github: `zwliew`,
+      medium: `zwliew`,
     },
   },
   plugins: [
