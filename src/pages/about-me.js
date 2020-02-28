@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Image from "gatsby-image"
 
+import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import resume from "./resume.pdf"
@@ -20,10 +22,25 @@ const AboutMePage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="About me" />
       <h1>About me</h1>
-      <p>
-        I'm starting my first year at the National University of Singapore in
-        2021 studying Computer Science and Mathematics.
-      </p>
+      <header style={{ display: "flex", marginBottom: rhythm(2.5) }}>
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={data.author}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 50,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `50%`,
+          }}
+        />
+        <p>
+          I'm starting my first year at the National University of Singapore in
+          2021 studying Computer Science and Mathematics.
+        </p>
+      </header>
 
       <Content title="Related links">
         <ul>
@@ -109,8 +126,16 @@ export default AboutMePage
 
 export const pageQuery = graphql`
   query {
+    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      childImageSharp {
+        fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     site {
       siteMetadata {
+        author
         title
       }
     }

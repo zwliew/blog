@@ -8,7 +8,13 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
-import { FaGithub, FaTwitter, FaMedium, FaInfoCircle } from "react-icons/fa"
+import {
+  FaGithub,
+  FaTwitter,
+  FaMedium,
+  FaInfoCircle,
+  FaLinkedin,
+} from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 import classes from "./bio.module.css"
@@ -46,6 +52,7 @@ const Bio = () => {
             twitter
             github
             medium
+            linkedin
           }
         }
       }
@@ -90,6 +97,10 @@ const Bio = () => {
           <ExternalSocialLink
             Img={FaMedium}
             to={`https://medium.com/@${social.medium}`}
+          ></ExternalSocialLink>
+          <ExternalSocialLink
+            Img={FaLinkedin}
+            to={`https://linkedin.com/in/${social.linkedin}`}
           ></ExternalSocialLink>
           <LocalSocialLink
             Img={FaInfoCircle}
