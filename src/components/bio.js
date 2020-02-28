@@ -6,18 +6,26 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
-import { FaGithub, FaTwitter, FaMedium } from "react-icons/fa"
+import { FaGithub, FaTwitter, FaMedium, FaInfoCircle } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 import classes from "./bio.module.css"
 
-const SocialLink = ({ to, Img, children }) => (
+const ExternalSocialLink = ({ to, Img }) => (
   <li className={classes.SocialLink}>
     <a href={to}>
       <Img></Img>
     </a>
+  </li>
+)
+
+const LocalSocialLink = ({ to, Img }) => (
+  <li className={classes.SocialLink}>
+    <Link to={to}>
+      <Img></Img>
+    </Link>
   </li>
 )
 
@@ -71,18 +79,22 @@ const Bio = () => {
           Singapore.
         </p>
         <ul className={classes.SocialLinks}>
-          <SocialLink
+          <ExternalSocialLink
             Img={FaTwitter}
             to={`https://twitter.com/${social.twitter}`}
-          ></SocialLink>
-          <SocialLink
+          ></ExternalSocialLink>
+          <ExternalSocialLink
             Img={FaGithub}
             to={`https://github.com/${social.github}`}
-          ></SocialLink>
-          <SocialLink
+          ></ExternalSocialLink>
+          <ExternalSocialLink
             Img={FaMedium}
             to={`https://medium.com/@${social.medium}`}
-          ></SocialLink>
+          ></ExternalSocialLink>
+          <LocalSocialLink
+            Img={FaInfoCircle}
+            to={`/about-me`}
+          ></LocalSocialLink>
         </ul>
       </div>
     </div>
