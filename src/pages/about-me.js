@@ -70,7 +70,7 @@ const AboutMePage = ({ data, location }) => {
         </ul>
       </Content>
 
-      <Content title="My education">
+      <Content title="Education">
         <ul>
           <li>
             <strong>Hwa Chong Institution (2013 - 2018)</strong> where I studied
@@ -80,7 +80,18 @@ const AboutMePage = ({ data, location }) => {
         </ul>
       </Content>
 
-      <Content title="My achievements">
+      <Content title="Work experience">
+        <ul>
+          <li>
+            <strong>Tinkertanker (Jan 2019 - Mar 2019)</strong> where I wrote
+            tests and fixed bugs for the Get Hacking Android app, worked on the
+            redesign of the Tinkercademy website, built Flask demos, and
+            facilitated micro:bit lessons.
+          </li>
+        </ul>
+      </Content>
+
+      <Content title="Achievements">
         <ul>
           <li>
             <strong>Google Code-in 2017 Grand Prize (top 50)</strong> for my
@@ -112,7 +123,7 @@ const AboutMePage = ({ data, location }) => {
         </ul>
       </Content>
 
-      <Content title="My extra-curricular activities">
+      <Content title="Extra-curricular activities">
         <ul>
           <li>Infocomm & Robotics Society (2017 - 2018)</li>
           <li>Wushu (2007 - 2016)</li>
