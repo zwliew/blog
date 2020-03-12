@@ -8,6 +8,7 @@
     "url": "https://github.com/zwliew/teeny-thoughts/issues"
   },
   "dependencies": {
+    "disqus-react": "1.0.7",
     "gatsby": "2.19.22",
     "gatsby-image": "2.2.41",
     "gatsby-plugin-feed": "2.3.27",
@@ -26,8 +27,8 @@
     "gatsby-transformer-remark": "2.6.53",
     "gatsby-transformer-sharp": "2.3.16",
     "prismjs": "1.19.0",
-    "react": "0.0.0-experimental-d28bd2994",
-    "react-dom": "0.0.0-experimental-d28bd2994",
+    "react": "0.0.0-experimental-8b155d261",
+    "react-dom": "0.0.0-experimental-8b155d261",
     "react-helmet": "5.2.1",
     "react-icons": "3.9.0",
     "react-typography": "0.16.19",
