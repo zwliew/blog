@@ -38,7 +38,7 @@
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
-    "prettier": "2.0.3"
+    "prettier": "2.0.4"
   },
   "homepage": "https://github.com/zwliew/teeny-thoughts#readme",
   "keywords": [
