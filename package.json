@@ -30,7 +30,7 @@
     "react": "0.0.0-experimental-e5d06e34b",
     "react-dom": "0.0.0-experimental-e5d06e34b",
     "react-helmet": "6.0.0",
-    "react-icons": "3.9.0",
+    "react-icons": "3.10.0",
     "react-typography": "0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
