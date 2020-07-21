@@ -115,7 +115,7 @@ const AboutMePage = ({ data, location }) => {
           </li>
           <li>
             <strong>
-              Cyber Defenders Discovery Camp 2018 Silver Award, 2017 2nd Place
+              Cyber Defenders Discovery Camp 2020 2nd Place, 2018 Silver Award, 2017 2nd Place
             </strong>{" "}
             for my team's performance in cracking security tasks involving
             binary exploitation, web security, reverse engineering, and more.
