@@ -27,7 +27,7 @@
     "gatsby-transformer-remark": "2.11.1",
     "gatsby-transformer-sharp": "2.8.0",
     "prismjs": "1.21.0",
-    "react": "0.0.0-experimental-94c0244ba",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-94c0244ba",
     "react-helmet": "6.1.0",
     "react-icons": "4.1.0",
