@@ -4766,10 +4766,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-disqus-react@1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/disqus-react/-/disqus-react-1.0.10.tgz#75f1553856157d08fa76d8339d53d783ec1e4a62"
-  integrity sha512-TFd+pSl9m9QpqGcNAmewH/V795I9ObJMcEbLCIyPBy1VvUUl8DUoP+OiWhx24UjRygfV8y6saZVTBJRNYGJvkQ==
+disqus-react@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/disqus-react/-/disqus-react-1.0.11.tgz#7949923320835310666cbfc77aae90577711434a"
+  integrity sha512-DZGc6kk16EGLAJtJAn+EdNHy44pBD0QJnuuOSyMf6qqsZrIYwkBFe72mdvRKfGYD1toR7bAvkRjmec/YQTrG+w==
 
 dns-equal@^1.0.0:
   version "1.0.0"
@@ -6541,10 +6541,10 @@ gatsby-remark-responsive-iframe@2.10.0:
     lodash "^4.17.20"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-smartypants@2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-2.8.0.tgz#b29e2c8a99cd390b7b26e861fb80e421951e1d56"
-  integrity sha512-EBJLFXIlDuqprl96T3XgzF/e2vYwusUicMyb9HTrClqm5hQmQ6EzZG9rpWPDW8m5ils0DCTaEvGqDxKh6KdgSQ==
+gatsby-remark-smartypants@2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-2.10.0.tgz#daf228a1de7366e945b03b67d99d287bb0e650e7"
+  integrity sha512-mKisFNwPuzW4/345htkd3sv0JGre8wcve1zT1mC6jg9V8q+dXb1TiZvliu4Xek8k9w9S6wcvDn6Z+NMjq4O8lw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     retext "^5.0.0"
